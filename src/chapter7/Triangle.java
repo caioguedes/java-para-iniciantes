@@ -4,7 +4,7 @@ public class Triangle extends TwoDShape {
     String style;
 
     Triangle(String s, double w, double h) {
-        super(w, h);
+        super(w, h, "triangle");
         style = s;
     }
 
@@ -14,7 +14,7 @@ public class Triangle extends TwoDShape {
     }
 
     Triangle(double x) {
-        super(x);
+        super(x, "triangle");
         style = "filled";
     }
 
