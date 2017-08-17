@@ -17,6 +17,11 @@ public class TwoDShape {
         width = height = x;
     }
 
+    TwoDShape(TwoDShape ob) {
+        width = ob.getWidth();
+        height = ob.getHeight();
+    }
+
     void showDim() {
         System.out.println("Width and height are " + width + " and " + height);
     }

@@ -18,6 +18,11 @@ public class Triangle extends TwoDShape {
         style = "filled";
     }
 
+    Triangle(Triangle ob) {
+        super(ob);
+        style = ob.style;
+    }
+
     double area() {
         return getWidth() * getHeight() / 2;
     }
