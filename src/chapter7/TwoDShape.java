@@ -1,6 +1,6 @@
 package chapter7;
 
-public class TwoDShape {
+abstract class TwoDShape {
     private double width;
     private double height;
     private String name;
@@ -56,8 +56,5 @@ public class TwoDShape {
         name = n;
     }
 
-    double area() {
-        System.out.println("area() must be overriden");
-        return 0.0;
-    }
+    abstract double area();
 }
