@@ -8,6 +8,16 @@ public class Triangle extends TwoDShape {
         style = s;
     }
 
+    Triangle() {
+        super();
+        style = "none";
+    }
+
+    Triangle(double x) {
+        super(x);
+        style = "filled";
+    }
+
     double area() {
         return getWidth() * getHeight() / 2;
     }
