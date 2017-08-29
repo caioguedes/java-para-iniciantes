@@ -13,7 +13,7 @@ public class CompFiles {
 
         try (
             FileInputStream f1 = new FileInputStream(args[0]);
-            FileInputStream f2 = new FileInputStream(args[2])
+            FileInputStream f2 = new FileInputStream(args[1])
         ) {
             do {
                 i = f1.read();
