@@ -8,14 +8,14 @@ public class MoreThreads {
         MyThread mt2 = new MyThread("Child #2");
         MyThread mt3 = new MyThread("Child #3");
 
-        for (int i = 0; i < 50; i++) {
+        do {
             System.out.print(".");
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 System.out.println("Main thread interrupted.");
             }
-        }
+        } while (mt1.isAlive() || mt2.isAlive() || mt3.isAlive());
 
         System.out.println("Main thread ending.");
     }
