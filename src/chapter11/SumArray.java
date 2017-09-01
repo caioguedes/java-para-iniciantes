@@ -4,7 +4,7 @@ public class SumArray {
 
     private int sum;
 
-    synchronized int sumArray(int[] num) {
+    int sumArray(int[] num) {
         sum =  0;
 
         for (int i = 0; i < num.length; i++) {
