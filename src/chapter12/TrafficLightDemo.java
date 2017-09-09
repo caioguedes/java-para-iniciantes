@@ -4,13 +4,10 @@ public class TrafficLightDemo {
     public static void main(String[] args) {
         TrafficLightSimulator tls = new TrafficLightSimulator(TrafficLightColor.GREEN);
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 9; i++) {
+            tls.changeColor();
             System.out.println(tls.getColor());
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                System.out.println(e);
-            }
+            tls.waitForChange();
         }
 
         tls.cancel();
