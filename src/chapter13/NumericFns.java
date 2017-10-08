@@ -14,4 +14,8 @@ public class NumericFns<T extends Number> {
     double fraction() {
         return num.doubleValue()  - num.intValue();
     }
+
+    boolean absEquals(NumericFns<?> ob) {
+        return Math.abs(num.doubleValue()) == Math.abs(ob.num.doubleValue());
+    }
 }
